@@ -1,0 +1,167 @@
+body{
+    background-color: rgb(249, 243, 235);
+    max-width: 1480px;
+    min-width: 900px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.lines-beside{
+    margin-top: 25px;
+    width: 30%;
+    height: 8px;
+    background-color:rgb(182, 164, 137);
+}
+#headline{
+    margin: 0;
+    font-size: 40px;
+    color: rgb(74, 75, 75);
+}
+
+#search-right{
+    display: flex;
+    flex-direction:column-reverse;
+    margin-bottom: 15px;
+}
+
+#top-part,#second-row-part{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#新增{
+    margin: 15px 10px 10px 0px;
+    border-radius: 10%;
+    width: 75px;
+    height: 40px;
+    background-color: rgb(217, 55, 55);
+}
+
+#新增:hover{
+    background-color: rgb(140, 36, 36);
+    color: aliceblue;
+}
+
+#删除{
+    border-radius: 10%;
+    width: 75px;
+    height: 40px;
+    background-color: rgb(41, 159, 78);
+}
+
+#删除:hover{
+    background-color: rgb(22, 86, 42);
+    color: aliceblue;
+}
+
+
+#middle-part{
+    height: 439px;
+}
+#main-table{
+    width: 100%;
+    line-height: 35px;
+    text-align: center;
+}
+
+#table-body tr:nth-child(odd){
+    background-color: rgb(204, 225, 247);
+
+}
+
+#table-body tr:nth-child(even){
+    border-spacing:0;
+    background-color: rgb(235, 249, 255);
+}
+
+#table-head{
+    height: 50px;
+    background-color: rgb(58, 130, 194);
+}
+
+#table-body tr:hover {
+    cursor: pointer;
+    background-color: #dbe5e7;
+}
+
+
+#page-part{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+#上一页{
+    border-radius: 10%;
+    width: 75px;
+    height: 40px;
+    background-color: rgb(217, 55, 55);
+}
+
+#上一页:hover{
+    background-color: rgb(140, 36, 36);
+    color: aliceblue;
+}
+
+#下一页{
+    border-radius: 10%;
+    width: 75px;
+    height: 40px;
+    background-color: rgb(41, 159, 78);
+}
+
+#下一页:hover{
+    background-color: rgb(22, 86, 42);
+    color: aliceblue;
+}
+
+
+
+#additional-window {
+    width: 350px;
+    height: 400px;
+    position: absolute;
+    left: 0; top: 0; right: 0; bottom: 25%;
+    margin: auto;
+    background-color: rgb(253, 253, 253);
+    text-align: center;
+    display: none;
+}
+#input-table tr{
+    margin: 10px;
+}
+
+#leftButton{
+    margin-top: 10px;
+    border-radius: 10%;
+    width: 80px;
+    height: 40px;
+
+}
+
+#leftButton:hover{
+    background-color: rgb(41, 159, 78);
+    color: aliceblue;
+}
+
+#rightButton{
+    margin-top: 20px;
+    border-radius: 10%;
+    width: 80px;
+    height: 40px;
+}
+
+#rightButton:hover{
+    background-color: rgb(218, 218, 218);
+}
+
+#input-table{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+

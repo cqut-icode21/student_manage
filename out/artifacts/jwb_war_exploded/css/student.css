@@ -1,0 +1,159 @@
+
+
+#title-line{
+    height: 30px;
+    width: 100%;
+    background-color: cornflowerblue;
+}
+#title{
+
+    height:0;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 60px;
+    background-color: white;
+    z-index: 999;
+}
+table{
+    width: 100%;
+    margin: 100px auto;
+    text-align: center;
+}
+thead{
+    height: 40px;
+    background-color: cadetblue;
+    font-size: 25px;
+}
+tbody{
+    text-align: center;
+    font-size: 20px;
+}
+
+tr,td{
+    border-bottom: 1px solid #d7d7d7;
+    padding: 15px 30px;
+}
+.mouse-color{
+    color:brown;
+}
+#turn{
+    position: relative;
+    top:-110px;
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+
+
+}
+#change{
+    position: relative;
+    top: 110px;
+    left: 5px;
+    width: 100%;
+    display: flex;
+    justify-content:left;
+}
+.up,.add{
+    width: 100px;
+    height: 70px;
+    background-color: pink;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+.next,.delete{
+    width: 100px;
+    height: 70px;
+    background-color: cadetblue;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+.hidden {
+    display: none;
+}
+#title1{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+
+
+}
+.model-box{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.3);
+    display: none;
+}
+
+.show-modal{
+    display: block;
+}
+
+#model-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 60%;
+    background-color: wheat;
+    border-radius: 0.5rem;
+    padding: 0.5rem  1rem;
+}
+.input{
+    height: 330px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+#sure-box{
+    width: 70px;
+    height: 35px;
+
+}
+#return-box{
+    width: 70px;
+    height: 35px;
+}
+#back-box{
+    width: 70px;
+    height: 35px;
+}
+.button-box{
+    width: 200px;
+    height: 40px;
+    position: relative;
+    left: 162px;
+    display: flex;
+    justify-content: space-around;
+    top: 100px;
+
+}
+#set-box{
+    width: 70px;
+    height: 35px;
+}
+#title1{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 30px;
+}
+#search-box{
+    position: absolute;
+    right: 10px;
+    top: 200px;
+}
+#search{
+    width: 160px;
+    height: 30px;
+}
+#search-sure{
+    height: 35px;
+    width: 70px;
+    font-size: 20px;
+}

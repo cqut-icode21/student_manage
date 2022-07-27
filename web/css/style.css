@@ -1,0 +1,130 @@
+/*总*/
+#all {
+
+    background-color: #f0ece9;
+    border-top: 8px #645650 solid;
+
+}
+
+/*第一行（学生管理系统那一行）*/
+#top {
+    height: 40px;
+    text-align: center;
+}
+/*学生管理系统那一行的黄线*/
+.headerLine {
+    width: 50%;
+    display: inline;
+    color: #c3a080;
+    font-size: 29px;
+}
+/*学生管理系统那几个字*/
+#header {
+    width: 400px;
+    display: inline;
+    color: #9ea09e;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 112px;
+    padding-right: 112px;
+}
+
+/*第二行（按钮那一行）*/
+#second {
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    width: 94%;
+    padding-left: 44px;
+}
+
+/*第三行（主体）*/
+#main {
+    display: flex;
+    justify-content: center;
+}
+/*表头*/
+#main thead {
+    text-align: center;
+}
+#main thead tr {
+    background-color: rgb(241, 241, 241);
+    height: 40px;
+}
+/*表主体*/
+.mainTbodyTr1 {
+    height: 30px;
+    background-color: #f8eaea;
+    text-align: center;
+}
+.mainTbodyTr2 {
+    height: 30px;
+    background-color: #e3ebff;
+    text-align: center;
+}
+/*第一列*/
+.col1 {
+    width: 50px;
+    height: 45px;
+}
+/*第二列*/
+.col2 {
+    width: 60px;
+    height: 45px;
+}
+/*第三列*/
+.col3 {
+    width: 180px;height: 45px;
+}
+/*第四列*/
+.col4 {
+    width: 180px;height: 45px;
+}
+/*第五列*/
+.col5 {
+    width: 180px;height: 45px;
+}
+/*第六列*/
+.col6 {
+    width: 180px;height: 45px;
+}
+/*第七列*/
+.col7 {
+    width: 180px;height: 45px;
+}
+/*第八列*/
+.col8 {
+    width: 80px;height: 45px;
+}
+/*第九列*/
+.col9 {
+    width: 80px;height: 45px;
+}
+/*第十列*/
+.col10 {
+    width: 80px;height: 45px;
+}
+/*第十一列*/
+.col11 {
+    width: 130px;height: 45px;
+}
+#final {
+    margin-top: 15px;
+    height: 40px;
+    padding-left: 69%;
+}
+#final p {
+    display: inline;
+}
+
+#totalBackground{
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #c4c2c1;
+    z-index:1;
+    opacity:.8;
+}

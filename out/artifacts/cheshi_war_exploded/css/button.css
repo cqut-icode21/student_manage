@@ -1,0 +1,135 @@
+#add /*新增*/
+{
+    height: 35px;
+    width: 80px;
+    background-color: rgba(134, 146, 154, 0.81);
+    color: white;
+    border: 1px solid black;
+}
+
+#del /*删除*/
+{
+    height: 35px;
+    width: 80px;
+    background-color: #d93429;
+    color: white;
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+#previous /*上一页*/
+{
+    height: 35px;
+    width: 80px;
+    background-color: rgba(134, 146, 154, 0.97);
+    color: white;
+    border: 1px solid black;
+}
+
+#next /*下一页*/
+{
+    height: 35px;
+    width: 76px;
+    background-color: #d36460;
+    color: white;
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+#examine /*查看*/
+{
+    font-size: 16px;
+    height: 20px;
+    border: none;
+    color: red;
+    background: none;
+}
+
+#update /*修改*/
+{
+    font-size: 16px;
+    height: 20px;
+    border: none;
+    color: red;
+    background: none;
+    /*background-color: #eef1f8;*/
+}
+
+#submit /*提交*/
+{
+    height: 30px;
+    width: 75px;
+    background-color: #5cb85c;
+    color: black;
+    border: 1px solid #dadee1;
+}
+
+#addCancel /*新增中的取消*/
+{
+    height: 30px;
+    width: 75px;
+    background-color: white;
+    color: black;
+    border: 1px solid #dadee1;
+    margin-left: 5px;
+}
+
+#preservation /*保存*/
+{
+    height: 30px;
+    width: 75px;
+    background-color: #5cb85c;
+    color: black;
+    border: 1px solid #dadee1;
+}
+
+#updateCancel /*修改中的取消*/
+{
+    height: 30px;
+    width: 75px;
+    background-color: white;
+    color: black;
+    border: 1px solid #dadee1;
+    margin-left: 5px;
+}
+
+#examineCancel /*修改中的取消*/
+{
+    height: 30px;
+    width: 75px;
+    background-color: white;
+    color: black;
+    border: 1px solid #dadee1;
+    /*margin-left: 5px;*/
+}
+
+#confirm /*确认*/
+{
+    height: 30px;
+    width: 75px;
+    background-color: #5cb85c;
+    color: black;
+    border: 1px solid #dadee1;
+}
+
+#delCancel /*删除中的取消*/
+{
+    height: 30px;
+    width: 75px;
+    background-color: white;
+    color: black;
+    border: 1px solid #dadee1;
+    margin-left: 5px;
+}
+
+#search1 /*搜索*/
+{
+    background-color: #a5eeef;
+    border: 1px solid black;
+}
+
+#search2 /*取消*/
+{
+    background-color: #c6efe9;
+    border: 1px solid black;
+}

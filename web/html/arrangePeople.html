@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>peopleArrangeSystem</title>
+    <link rel="stylesheet" href="../css/peopleArrange.css">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+
+<body>
+     <div class="all">
+<!--标题-->
+         <div class="headCenter">
+           <div class="head">学生管理系统</div>
+         </div>
+<!--按钮-->
+         <div style="display: flex;justify-content: center;flex-direction: row;">
+             <div class="button">
+                 <button type="button" class="add" onclick="add()">新  增</button>
+                 <button type="button" class="delete" id="delete" onclick="delete2()">删  除</button>
+                  <input class="research" placeholder="请输入内容" id="research" onblur="find()" onkeyup="find()">
+                 <button type="button" class="click" onclick="start1()"></button>
+                 <button type="button" class="delete" onclick="return2()" hidden="hidden" id="return">return</button>
+             </div>
+         </div>
+<!--表格-->
+         <div class="tableView">
+             <table id="table">
+                 <thead>
+                     <tr class="tableHeader">
+                         <td><div><input type="checkbox" id="selectAll" onclick="selectAll()">selectAll</div></td>
+                         <td><div>name</div></td>
+                         <td><div>gender</div></td>
+                         <td><div>college</div></td>
+                         <td><div>major</div></td>
+                         <td><div>grade</div></td>
+                         <td><div>Class</div></td>
+                         <td><div>age</div></td>
+                         <td><div>number</div></td>
+                         <td>
+                             <div></div>
+                         </td>
+                     </tr>
+                 </thead>
+                 <tbody id="menuBody">
+                 </tbody>
+             </table>
+             </div>
+<!--翻页-->
+         <div  class="bottom">
+               <button onclick="turnUp()">上一页</button>
+               <div class="passage" id="passage">1</div>
+               <button onclick="turnNext()">下一页</button>
+         </div>
+<!--add弹出框-->
+         <div class="smallMenu" id="smallMenu" hidden="hidden">
+                 <label for="name">name</label>
+                 <input  id="name" name="input" onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'')"
+                         placeholder="请输入名字" onblur="value=value.replace(/[^\u4E00-\u9FA5]/g,'')"/>
+                 <label for="gander">gander</label>
+                 <input  id="gander" name="input" onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'')"
+                         placeholder="请输入性别" onblur="value=value.replace(/[^\u4E00-\u9FA5]/g,'')">
+                 <label for="college" >college</label>
+                 <input  id="college" name="input" onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'')"
+                         placeholder="请输入学院" onblur="value=value.replace(/[^\u4E00-\u9FA5]/g,'')">
+                 <label for="major">major</label>
+                 <input id="major" name="input" onkeyup="value=value.replace(/[^\u4E00-\u9FA5]/g,'')"
+                        placeholder="请输入专业" onblur="value=value.replace(/[^\u4E00-\u9FA5]/g,'')">
+                 <label for="grade">grade</label>
+                 <input  id="grade" name="input" onkeyup="value=value.replace(/[^\d]/g,'')"
+                         placeholder="请输入年级" onblur="value=value.replace(/[^\d]/g,'')"
+                         oninput="if(value.length>4)value=value.slice(0,4)">
+                 <label for="Class">Class</label>
+                 <input  id="Class" name="input" onkeyup="value=value.replace(/[^\d]/g,'')"
+                         placeholder="请输入班级" onblur="value=value.replace(/[^\d]/g,'')" >
+                 <label for="age">age</label>
+                 <input  id="age" name="input" onkeyup="value=value.replace(/[^\d]/g,'')"
+                         placeholder="请输入年纪" onblur="value=value.replace(/[^\d]/g,'')"
+                         oninput="if(value.length>3)value=value.slice(0,3)">
+                 <label for="number">number</label>
+                 <input  id="number" name="input" onkeyup="value=value.replace(/[^\d]/g,'')"
+                         placeholder="请输入学号" onblur="value=value.replace(/[^\d]/g,'')"
+                         oninput="if(value.length>11)value=value.slice(0,11)">
+                  <div>
+                      <button class="add2" id="change" onclick="change2()" hidden="hidden">change</button>
+                      <button class="add2"   onclick="submit()" id="add2" hidden="hidden">add</button>
+                      <button class="cancel" onclick="cancel()" id="cancel" >cancel</button>
+                  </div>
+         </div>
+     </div>
+</body>
+<script  src="../js/Jquery.js"></script>
+<script src="../js/bootstrap.js"></script>
+<script src="../js/arrange.js"></script>
+</html>

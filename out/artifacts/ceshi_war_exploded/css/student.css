@@ -1,0 +1,148 @@
+.headLine {
+    max-width: 500%;
+    min-width: 25%;
+    width: 100%;
+    transform: translate(0,12px);
+    margin: 0 auto 0 auto;
+}
+.emptySpan {
+    width: 100%;
+    height: 10px;
+    background: rgba(231, 123, 38, 0.99);
+}
+.emptySpan1 {
+    width: 100%;
+    height: 10px;
+    background: rgba(231, 123, 38, 0.99);
+    transform: translate(60px,0);
+}
+.headLineT {
+    font-family: "华文中宋", serif;
+    height: 33px;
+    font-size: 25px;
+    font-weight: bolder;
+    background: white;
+    width: 600px;
+    text-align: center;
+    transform: translate(30px,0);
+}
+
+.setButtonAdd {
+    background: #FFED97;
+    padding: 12px 25px;
+    font-family: "华文中宋", serif;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: aquamarine;
+    transform: translate(-500px,17px);
+}
+.setButtonDelete {
+    background: #D9B3B3;
+    padding: 12px 25px;
+    font-family: "华文中宋", serif;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: aquamarine;
+    transform: translate(-700px,17px);
+}
+.setSearch {
+    width: 200px;
+    height: 25px;
+    transform: translate(580px,0px);
+}
+.setSearchImage {
+    transform: translate(580px,10px);
+}
+
+.firstRowCheck {
+    width: 30px;
+    background: aqua;
+    text-align: center;
+}
+.firstRow {
+    width: 140px;
+    background: aqua;
+    font-family: "华文中宋", serif;
+}
+.firstRowId {
+    background: aqua;
+    font-family: "华文中宋", serif;
+    width: 190px;
+}
+.setFirstTable {
+    width: 1600px;
+    border-collapse: collapse;
+    height: 50px;
+    transform: translate(0,30px);
+}
+
+.setTable {
+    width: 1600px;
+    border-collapse: collapse;
+    transform: translate(0,35px);
+}
+
+.setAddForm {
+    position: fixed;
+    width: 500px;
+    height: 800px;
+    top: 108px;
+    transform: translate(10px,-20px);
+}
+.setFirst {
+    text-align: center;
+    height: 50px;
+    background: rgba(224, 139, 78, 0.99);
+}
+.setBack {
+    text-align: center;
+    height: 45px;
+    padding-top: 5px;
+    background: rgba(189, 209, 218, 0.96);
+}
+
+.setPage {
+    width: 1600px;
+    transform: translate(0,60px);
+    text-align: center;
+    margin: 0 auto 0 auto;
+}
+.setButtonPage1 {
+    padding: 5px 25px;
+    font-family: "华文中宋", serif;
+    font-weight: bold;
+    background: #FFBD9D;
+}
+.setButtonPage2 {
+    padding: 5px 25px;
+    font-family: "华文中宋", serif;
+    font-weight: bold;
+    background: #FFBD9D;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+html{
+    overflow-x:hidden;
+}
+.setSure {
+    position: fixed;
+    width: 500px;
+    height: 200px;
+    top: 158px;
+    background: rgba(174,196,206,0.96);
+    left: 50%;
+}
+.setReturn {
+    width: 60px;
+    height: 30px;
+    transform: translate(580px,1px);
+    background: rgba(70, 215, 215, 0.99);
+}

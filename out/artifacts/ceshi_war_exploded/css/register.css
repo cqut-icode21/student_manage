@@ -1,0 +1,53 @@
+.setBackGround {
+    background:url("https://img-qn-0.51miz.com/preview/photo/00/01/55/65/P-1556597-D284AB75O.jpg" ) no-repeat center center;
+    background-size: 100% 100%;
+    width: 1500px;
+    height: 720px;
+}
+
+.setAccount {
+transform: translate(-10px,260px);
+}
+
+.setPassword {
+    transform: translate(-10px,310px);
+}
+
+.setButtonRegister {
+    transform: translate(0,350px);
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    background: #f2f4f8;
+}
+
+.setForm {
+    text-align: center;
+}
+
+.setInput {
+    width: 200px;
+    height: 25px;
+}
+
+.setRegister {
+    transform: translate(0,200px);
+    font-size: 27px;
+}
+
+.setImg {
+    transform: translate(0,8px);
+}
+
+.headLine9 {
+    max-width: 500%;
+    min-width: 25%;
+    width: 100%;
+}
+html{
+    overflow-x:hidden;
+}
+* {
+    margin: 0;
+    padding: 0;
+}

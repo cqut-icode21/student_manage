@@ -1,0 +1,201 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#box {
+    width: 100%;
+    max-width: 1680px;
+    min-width: 1280px;
+    margin: 0 auto;
+}
+
+/* 标题样式 */
+h1 {
+    text-align: center;
+    width: 50%;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 10px;
+    margin: 25px auto;
+}
+
+#box1 {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    background-color: aliceblue;
+}
+
+#box1 #box1_1, #box1_2 {
+    margin-top: 15px;
+    background-color: cornflowerblue;
+    width: 25%;
+    height: 18px;
+}
+
+/*增删键以及翻页样式  */
+
+
+.input {
+    padding: 5px 15px;
+}
+
+.box2 {
+    width: 100%;
+    height: 50px;
+    background-color: aliceblue;
+    float: left;
+}
+
+.input {
+    float: right;
+    width: 240px;
+    height: 12px;
+    margin-top: 11px;
+    margin-right: 20px;
+}
+
+#search {
+    width: 30px;
+    height: 30px;
+    float: right;
+    margin-top: 9px;
+    margin-right: 25px
+}
+
+.style1 {
+    width: 80px;
+    height: 40px;
+    margin-top: 5px;
+    background-color: aquamarine;
+}
+
+.style2 {
+    width: 80px;
+    height: 40px;
+    margin-left: 60px;
+    background-color: #ff4040;
+}
+
+/* 表格样式*/
+table {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.icon {
+    padding-right: 8px;
+}
+
+table tr {
+    height: 40px;
+    width: 100%;
+    margin: auto;
+}
+
+table tr td {
+    width: auto;
+    padding: 2px 10px;
+}
+
+.color1 {
+    background-color: #d1fffd;
+}
+
+.color2 {
+    background-color: #9ef5ff;
+
+}
+
+.center {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 表单样式 */
+body {
+    position: relative;
+
+}
+
+li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+#box {
+    width: 100%;
+    height: 100%;
+    filter: blur(0);
+
+}
+
+.boxRadius {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.refuse {
+    width: 100%;
+    height: 100%;
+}
+
+.float {
+    overflow: hidden;
+    position: absolute;
+    top: 25%;
+    left: 36.5%;
+    width: 400px;
+    height: auto;
+    margin-top: 36px;
+    padding: 0 0 10px;
+    background-color: #fffff1;
+}
+
+.divRadius {
+    border-radius: 5px;
+}
+
+.box {
+    background-color: #cdffc9;
+    text-align: center;
+    margin: auto;
+    padding: 10px 0 5px;
+
+}
+
+.boxFlex {
+    border-width: 1px;
+    margin: 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxLast {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#pageDate {
+    background-color: beige;
+    padding-top: 5px;
+    margin-bottom: 6px;
+    margin-left: 560px;
+}
+
+/*页脚样式  */
+.foot {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 90%;
+    margin: 30px auto 0;
+    font-size: 20px;
+}

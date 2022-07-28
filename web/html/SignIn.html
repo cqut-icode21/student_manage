@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生管理系统-登录</title>
+
+    <link rel="stylesheet" href="../css/SignIn.css">
+
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<div id="main">
+    <div id="top">
+
+        <h1 id="header">学生管理系统</h1>
+
+    </div>
+    <div id="middle">
+        <div id="账号登录" class= "mid">
+            <p >账号登录</p>
+        </div>
+        <div id="账号密码" class= "mid">
+            <div 账号><p>账号</p><input id="账号框" placeholder=请输入账号></div>
+            <div 密码><p>密码</p><input id = "密码框" placeholder=请输入密码 ></div>
+        </div>
+
+        <div id="登录" class= "mid">
+            <button id="登录按钮" onclick=signIn()>登录</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="../js/SignIn.js"></script>

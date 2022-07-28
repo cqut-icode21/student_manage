@@ -14,7 +14,7 @@ public interface BaseDao {
      * @param clazz 类
      * @return 类的所有结果数组
      */
-    <T> List<T> findAll(Class<T> clazz);
+    <T> List<T> findAll(Class<T> clazz, int former, int now);
 
     /**
      * 根据id查询
@@ -50,5 +50,7 @@ public interface BaseDao {
      * @return 是否成功
      */
     boolean update(Object object, Object id);
+
+    <T> List<T> search(Class clazz, String text, int former, int now);
 
 }

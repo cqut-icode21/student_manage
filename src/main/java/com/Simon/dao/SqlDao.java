@@ -11,7 +11,7 @@ public interface SqlDao {
      * @param clazz 类
      * @return SQL语句字符串
      */
-    String findAllSql(Class<?> clazz);
+    String findAllSql(Class<?> clazz, int former, int now);
 
     /**
      * 根据id查询
@@ -44,4 +44,6 @@ public interface SqlDao {
      * @return 修改的SQL语句
      */
     String updateSql(Class<?> clazz);
+
+    String findSearchSql(String text, Class<?> clazz, int former, int now);
 }

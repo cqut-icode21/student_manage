@@ -1,0 +1,84 @@
+body{
+    background-image:url("../imgs/登录背景2.png") ;
+    background-size :cover;
+    background-repeat:no-repeat;
+}
+
+#header{
+    color: white;
+
+}
+
+#top{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}
+.mid{
+    width: 307px;
+    margin: auto;
+    opacity: 0.9;
+
+}
+
+#账号登录{
+    height: 50px;
+    background-color: #eeecec;
+}
+#账号登录 p{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#账号密码{
+    height: 120px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+#账号密码 div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
+
+#账号登录 p{
+    padding-top: 15px;
+}
+
+#账号密码 input{
+    border-width: 0;
+    outline:none;
+}
+
+#登录{
+    height: 45px;
+    background-color: #eeecec;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#登录按钮 {
+    height: 45px;
+    width: 60px;
+    border-width: 0;
+}
+
+#main{
+   margin-top: 6%;
+
+}
+#登录按钮:hover{
+    font-weight: 10;
+}
+
+
+
+

@@ -1,98 +1,37 @@
 package com.Simon.service;
 
+import com.Simon.dao.impl.DatabaseReflect;
 import com.Simon.entities.Student;
 
 public class AddService {
 
-    private String id;
-    private String name;
-    private String sex;
-    private String college;
-    private String professional;
-    private String grade;
-    private String CLASS;
-    private String age;
-    private Student student;
+    private final String id;
+    private final String name;
+    private final String sex;
+    private final String college;
+    private final String professional;
+    private final String grade;
+    private final String CLASS;
+    private final String age;
+    private final Student student;
 
-    public AddService() {
 
+    public AddService(String[] properties) {
+        id = properties[0];
+        name = properties[1];
+        sex = properties[2];
+        college = properties[3];
+        professional = properties[4];
+        grade = properties[5];
+        CLASS = properties[6];
+        age = properties[7];
+        student = new Student(id, name, sex, college, professional, grade, CLASS, age);
     }
 
-    public AddService(String id, String name, String sex, String college, String professional, String grade, String CLASS, String age) {
-        this.id = id;
-        this.name = name;
-        this.sex = sex;
-        this.college = college;
-        this.professional = professional;
-        this.grade = grade;
-        this.CLASS = CLASS;
-        this.age = age;
-        student = getStudent();
+    public boolean add() {
+        DatabaseReflect databaseReflect = new DatabaseReflect();
+        return databaseReflect.add(student);
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getSex() {
-        return sex;
-    }
-
-    public void setSex(String sex) {
-        this.sex = sex;
-    }
-
-    public String getCollege() {
-        return college;
-    }
-
-    public void setCollege(String college) {
-        this.college = college;
-    }
-
-    public String getProfessional() {
-        return professional;
-    }
-
-    public void setProfessional(String professional) {
-        this.professional = professional;
-    }
-
-    public String getGrade() {
-        return grade;
-    }
-
-    public void setGrade(String grade) {
-        this.grade = grade;
-    }
-
-    public String getCLASS() {
-        return CLASS;
-    }
-
-    public void setCLASS(String CLASS) {
-        this.CLASS = CLASS;
-    }
-
-    public String getAge() {
-        return age;
-    }
-
-    public void setAge(String age) {
-        this.age = age;
-    }
-
-    public Student getStudent() {
-        return createStudent();
-
-    }
-
-    public Student createStudent() {
-        return new Student(id, name, sex, college, professional, grade, CLASS, age);
-    }
 
 }

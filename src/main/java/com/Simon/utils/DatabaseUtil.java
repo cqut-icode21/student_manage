@@ -3,7 +3,6 @@ package com.Simon.utils;
 import java.sql.*;
 
 public class DatabaseUtil {
-
     public static Connection getConnection() {
         // 驱动信息
         String driverName = "com.mysql.cj.jdbc.Driver";
@@ -20,11 +19,15 @@ public class DatabaseUtil {
         // 注册驱动
         try {
             Class.forName(driverName);
+//            System.setProperty("jdbc.driver","com.mysql.jdbc.Driver");
+
             System.out.println("驱动加载成功！\n开始连接！");
             // 建立连接
             collection = DriverManager.getConnection(url, userName, password);
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
+        } catch (ClassNotFoundException e) {
+            throw new RuntimeException(e);
         }
         return collection;
     }

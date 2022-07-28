@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.title{
+    width: 100%;
+    height: 50px;
+
+    color: white;
+    line-height: 50px;
+    font-size: 30px;
+
+    background-color:deepskyblue;
+    border-bottom: 4px solid greenyellow;
+}
+.title span{
+    margin-left: 20px;
+    display: inline-block;
+
+}
+.student{
+    display: inline-block;
+
+    width: 100px;
+    height: 50px;
+
+    color: white;
+    font-size: 20px;
+
+    text-decoration: none;
+}
+.teacher{
+    display: inline-block;
+
+    color: white;
+    font-size: 20px;
+
+    text-decoration: none;
+}
+.student:hover{
+    color: grey;
+}
+.teacher:hover{
+    color: grey;
+}
+
+.utilsBox{
+    width: 100%;
+    height: 60px;
+
+    background-color: grey;
+    overflow: hidden;
+}
+.utils{
+    display: inline-block;
+    float: right;
+
+    width: 500px;
+    height: 60px;
+
+    text-align: center;
+    line-height: 60px;
+
+}
+.scout{
+    height: 30px;
+
+    border: 1px solid grey;
+    outline: none;
+    margin-left: 227px;
+}
+.scoutButton{
+    height: 35px;
+    width: 50px;
+
+    background-color: darkseagreen;
+    color: honeydew;
+
+    border-radius: 10%;
+    margin-left: 10px;
+}
+.addPerson{
+    height: 40px;
+    width:62px;
+
+    background-color: skyblue;
+    color: honeydew;
+
+    border-radius: 10%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.deletePerson{
+    height: 40px;
+    width: 62px;
+
+    background-color: hotpink;
+    color: honeydew;
+
+    border-radius: 10%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.tableBoxStudent{
+    width: 100%;
+
+    border-top: 5px solid greenyellow;
+}
+.tableBoxTeacher{
+    display: none;
+    width: 100%;
+
+    border-top: 5px solid greenyellow;
+}
+thead{
+    height: 40px;
+
+    color: black;
+    font-size: 20px;
+    line-height: 40px;
+
+    background-color: darkgray;
+}
+.buttonBox{
+    display: flex;
+    justify-content: right;
+}
+.previous{
+    width: 70px;
+    height: 40px;
+
+    background-color: skyblue;
+    text-align: center;
+    line-height: 40px;
+    color: white;
+
+    border-radius: 10%;
+    margin-right: 40px;
+}
+.next{
+    width: 70px;
+    height: 40px;
+
+    background-color: hotpink;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+
+    border-radius: 10%;
+    margin-right: 20px;
+}
+.back{
+    width: 70px;
+    height: 40px;
+
+    background-color:lightseagreen;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+
+    border-radius: 10%;
+    margin-right: 40px;
+}
+table{
+    width: 100%;
+}
+.workButton{
+    width: 45px;
+    height: 30px;
+
+    color: black;
+    line-height: 20px;
+    text-align: center;
+
+    border-radius: 10%;
+    margin-right: 10px;
+}
+tr{
+    font-size: 16px;
+
+    height:55px;
+    text-align: center;
+    line-height: 55px;
+
+
+}
+/*模态框*/
+.modal-data{
+    position: absolute;
+    top: 200px;
+    left: 40%;
+
+    width:20%;
+    height: 430px;
+
+    background-color: navajowhite;
+    text-align:center;
+    border: 1px solid black;
+}
+.title2{
+    width: 100%;
+    height: 40px;
+
+    text-align: center;
+    line-height: 40px;
+    color: black;
+}
+.inf{
+    width: 100%;
+}
+.buttonBox2{
+    width: 100%;
+    text-align: center;
+
+    margin-top: 10px;
+}
+.error{
+    display: none;
+    color: red;
+    font-size: 15px;
+}

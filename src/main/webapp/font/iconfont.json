@@ -1,0 +1,23 @@
+{
+  "id": "3543539",
+  "name": "动态学生管理系统",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1013146",
+      "name": "老师",
+      "font_class": "jiaolian1",
+      "unicode": "e69d",
+      "unicode_decimal": 59037
+    },
+    {
+      "icon_id": "14995865",
+      "name": "学生列表",
+      "font_class": "xueshengliebiao",
+      "unicode": "e68c",
+      "unicode_decimal": 59020
+    }
+  ]
+}

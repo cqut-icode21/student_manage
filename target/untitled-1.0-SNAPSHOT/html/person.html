@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>人员管理系统</title>
+    <link href="../font/iconfont.css" rel="stylesheet">
+    <link href="/css/person.css" rel="stylesheet">
+</head>
+<body>
+  <div class="title">
+      <span>人员管理系统</span>
+      <div style="display: inline-block">
+          <span class="iconfont icon-xueshengliebiao"></span>
+          <a href="#" class="student">学生信息</a>
+          <span class="iconfont icon-jiaolian1"></span>
+          <a href="#" class="teacher">教师信息</a>
+      </div>
+  </div>
+    <div class="utilsBox">
+        <button class="addPerson" onclick="addPerson()">添加人员</button>
+        <button class="deletePerson" onclick="deletePerson()">删除人员</button>
+        <div class="utils">
+            <input type="text" class="scout">
+            <button class="scoutButton" onclick="scout()">搜索</button>
+        </div>
+    </div>
+    
+<!--    表格-->
+    <div>
+        <div class="tableBoxStudent">
+            <table style="border-collapse: collapse">
+                <thead>
+                <tr>
+                    <th><input type="checkbox" onclick="chooseAll()" class="Main"></th>
+                    <th>序号</th>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>学院</th>
+                    <th>专业</th>
+                    <th>年级</th>
+                    <th>班级</th>
+                    <th>年龄</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+            
+                </tbody>
+            </table>
+        </div>
+        <div class="tableBoxTeacher">
+            <table style="border-collapse: collapse">
+                <thead>
+                <tr>
+                    <th><input type="checkbox" onclick="chooseAll()"></th>
+                    <th>序号</th>
+                    <th>工号</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>学院</th>
+                    <th>手机号</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+            
+                </tbody>
+            </table>
+        </div>
+        <div class="buttonBox">
+            <button class="previous" onclick="previous()">上一页</button>
+            <button class="next" onclick="nextPage()">下一页</button>
+        </div>
+    </div>
+</body>
+<script src="/js/person.js"></script>
+</html>

@@ -1,0 +1,185 @@
+html{
+    margin: auto;
+    padding: 0;
+    display: block;
+}
+body{
+    margin: auto;
+    padding: 0;
+}
+/*头部空白*/
+.top{
+    margin: 0;
+    width: 100%;
+    height: 60px;
+}
+/*标题外框*/
+.title{
+    padding: 0;
+    margin: auto;
+    background-color: aqua;
+    height: 40px;
+    width: 100%;
+    line-height: 25px;
+}
+/*标题文本*/
+.title-text{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 194px;
+    height: 40px;
+    line-height: 39px;
+    margin: auto;
+}
+/*标题下空白*/
+.blank{
+    margin: auto;
+    width: 100%;
+    height: 20px;
+}
+/*功能键*/
+.add{
+    background-color: antiquewhite;
+    border-color: #bdb19e;
+}
+.delete{
+    background-color: aquamarine;
+    border-color: #489179;
+}
+.search{
+    float: right;
+}
+/*表头*/
+li{
+    display: inline;
+    line-height: 36px;
+}
+ul{
+    display: flex;
+    justify-content:space-between;
+    max-width:1400px;
+    margin: 12px;
+    padding-inline-start: 20px;
+    padding-inline-end: 20px;
+}
+.text-list-all{
+    background-color: azure;
+    line-height: 48px;
+    height: 50px;
+    text-align: center;
+}
+/*表格设计*/
+.table{
+    position: relative;
+    text-align: center;
+    line-height: 48px;
+    height: 500px;
+}
+.num{
+    width: 32px;
+}
+.stu-num{
+    width: 104px;
+    height: 36px;
+}
+.name{
+    width: 64px;
+}
+.sex{
+    width: 32px;
+}
+.sch{
+    width: 96px;
+}
+.maj{
+    width: 64px;
+}
+.gra{
+    width: 38px;
+}
+.cla{
+    width: 32px;
+}
+.age{
+    width: 32px;
+}
+.ope{
+    width: 80px;
+}
+/*页眉*/
+.table-bot{
+    display: none;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+}
+.page-about{
+    margin: auto;
+    text-align: center;
+}
+/*功能框*/
+.con-ope{
+    margin: auto;
+    display: none;
+    justify-content: center;
+    height: 0;
+}
+.ope-d{
+    display: block;
+    margin: auto;
+    position: absolute;
+    left:0; right:0; top:0; bottom:0;
+    width: 505px;
+    height: 400px;
+    background-color: cornsilk;
+    z-index: 10;
+}
+.ope-in{
+    line-height: 41px;
+    margin: auto;
+    width: 220px;
+}
+.ope-title{
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(235, 245, 155, 0.53);
+    display: flex;
+    justify-content: center;
+}
+.sure-add{
+    float:left;
+}
+/*查看框*/
+.choice-see{
+    display: flex;
+    justify-content: center;
+}
+.back{
+    float:right;
+}
+.sure-rev{
+    float:left;
+}
+/*错误信息*/
+.err-num{
+    display: none;
+    margin: auto;
+    text-align: center;
+    height: 15px;
+    line-height: 12px;
+    font-size: 12px;
+    color: red;
+}
+.err-sex{
+    display: none;
+    margin: auto;
+    text-align: center;
+    height: 15px;
+    line-height: 12px;
+    font-size: 12px;
+    color: red;
+}
+.back-main{
+    display: none;
+}

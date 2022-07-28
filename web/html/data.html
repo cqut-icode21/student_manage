@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        数据展示
+    </title>
+    <meta charset="utf-8">
+    <link href="../css/style.css" rel="stylesheet">
+</head>
+<body>
+<!--头部空白-->
+<div class="top"></div>
+<!--大标题-->
+<div class="title">
+    <span class="title-text">
+        <h1>学生管理系统</h1>
+    </span>
+</div>
+<!--大标题下空白-->
+<div class="blank"></div>
+<div class="functions">
+    <button class="add" >增加人员</button>
+    <button class="delete" onclick="deleteStudent()">减少人员</button>
+    <span class="search">
+     <button class="back-main" onclick="backMa()">返回</button>
+    <span class="search-text"><input type=text class="search-in" placeholder="请输入查询学号"></span>
+    <span class="search-image" onclick="search()">搜索</span>
+    </span>
+</div>
+<!--表头-->
+<div class="table-top">
+    <div class="table-top-text">
+        <ul class="text-list-all">
+            <li class="check-all" ><input type="checkbox" onclick="checkAll()" class="checkAll"></li>
+            <li class="num">序号</li>
+            <li class="stu-num">学号</li>
+            <li class="name">姓名</li>
+            <li class="sex">性别</li>
+            <li class="sch">学院</li>
+            <li class="maj">专业</li>
+            <li class="gra">年级</li>
+            <li class="cla">班级</li>
+            <li class="age">年龄</li>
+            <li class="ope">功能</li>
+        </ul>
+    </div>
+</div>
+<!--处理框-->
+<div class="con-ope">
+    <div class="ope-d">
+        <span class="ope-title">新增学员信息</span>
+        <div class="ope-in">
+            <span class="numF">学号：<input type="text" class="numI"></span>
+            <div class="err-num">学号应为11位</div>
+            <span class="namF">姓名：<input type="text" class="namI"></span>
+            <span class="sexF">性别：<input type="text" class="sexI"></span>
+            <div class="err-sex">性别应为男或女</div>
+            <span class="schF">学院：<input type="text" class="schI"></span>
+            <span class="majF">专业：<input type="text" class="majI"></span>
+            <span class="graF">年级：<input type="text" class="graI"></span>
+            <span class="claF">班级：<input type="text" class="claI"></span>
+            <span class="ageF">年龄：<input type="text" class="ageI"></span>
+           <span class="choice-add"><button class="sure-add" onclick="addStudent()">确定</button> <button class="back" onclick="back()">取消</button></span>
+            <span class="choice-rev"><button class="sure-rev" onclick="set()">修改</button> <button class="back" onclick="back()">取消</button></span>
+           <span class="choice-see"><button class="back-see" onclick="back()">返回</button></span>
+        </div>
+    </div>
+</div>
+<!--表格-->
+<div class="table"></div>
+<!--页眉-->
+<div class="table-bot">
+    <div class="page-about">
+        <button class="last" >上一页</button>
+        <span class="show-page" id="showPage"></span>
+        <button class="next" >下一页</button>
+    </div>
+</div>
+</body>
+<script src="../js/data.js"></script>
+</html>

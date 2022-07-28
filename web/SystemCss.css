@@ -1,0 +1,89 @@
+#first{
+    z-index: 1;
+}
+.theme{
+    margin: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+}
+.color0{
+    background-color: #c5f3eb;
+}
+.color1{
+    background-color: #cfe5db;
+}
+.color2{
+    background-color: #e6efed;
+}
+.color3{
+    background-color: #f8eae2;
+}
+.function{
+    display: flex;
+    justify-content: space-between;
+}
+.textBox{
+    display: flex;
+    align-items: end;
+}
+input{
+    height: 2em;
+    margin: 1em;
+}
+span{
+    align-content: center;
+    height: 2em;
+    font-size: 3em;
+    margin: 1em;
+}
+.big{
+    width:100%;
+    height: auto;
+    transform-style: preserve-3d;
+    position: relative;
+    z-index: 1;
+}
+table{
+    width: 100%;
+    text-align: center;
+    font-size: 1.5em;
+    border: 1px solid black;
+}
+.btBox2{
+    display: flex;
+    justify-content: right;
+}
+button{
+    width: 8em;
+    height: 4em;
+    margin: 1em;
+    background-color: #dceed3;
+}
+.font1{
+    font-size: 3em;
+}
+#addBox{
+    z-index: 1;
+    position: absolute;
+    left: 36%;
+    top: 25%;
+    width: 30em;
+    display: none;
+}
+.subAddBox{
+    font-size: small;
+    background-color: #e8e8ec;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+}
+p{
+    margin: 1px;
+}
+.page{
+    position: absolute;
+    top: 93%;
+}

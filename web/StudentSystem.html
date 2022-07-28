@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学生管理系统</title>
+    <link rel="stylesheet" href="font_n98perpayci/iconfont.css">
+    <link rel="stylesheet" href="SystemCss.css">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="keben" content="no-cache">
+</head>
+<body onload="getData()">
+<!--<form action="/successServLet">-->
+<div id="first">
+    <!-- 标题 -->
+    <div class="theme color1">
+        <p class="font1">学生信息管理系统</p>
+    </div>
+    <div class="function color1">
+        <div>
+            <button type="submit" onclick="showAddBox()">新增</button>
+            <button type="submit" onclick="remove1()">删除</button>
+        </div>
+        <div class="textBox">
+            <input type="text" id="key">
+            <span class="iconfont" onclick="research()">&#xe651;</span>
+        </div>
+    </div>
+
+    <div class="big">
+        <div>
+            <table id="table">
+                <tr class="color3">
+                    <th><input type="checkbox" id="all" onclick="select1()"></th>
+                    <th>序号</th>
+                    <th>学号</th>
+                    <th>姓名</th>
+                    <th>性别</th>
+                    <th>学院</th>
+                    <th>专业</th>
+                    <th>年级</th>
+                    <th>班级</th>
+                    <th>年龄</th>
+                    <th>操作</th>
+                </tr>
+            </table>
+            <div class="btBox2">
+                <button onclick="return1()">返回</button>
+                <button onclick="showNextData()" id="next">下一页</button>
+                <button onclick="showPreData()" id="pre">上一页</button>
+            </div>
+        </div>
+    </div>
+    <div class="theme font1 page" id="page">第 1 页</div>
+</div>
+
+<!--    新增页面-->
+<!--<form id="httpServlet">-->
+    <div class="color2" id="addBox">
+        <div class="theme color0">
+            <h1 id="title"></h1>
+        </div>
+        <div class="subAddBox ">
+
+            <p>学号 :<input type="text" class="stData" name="number"></p>
+            <p id="number" class="inspect"></p>
+            <p>姓名 :<input type="text" class="stData" name="name"></p>
+            <p id="name" class="inspect"></p>
+            <p>性别 :<input type="text" class="stData" name="gender"></p>
+            <p id="gender" class="inspect"></p>
+            <p>学院 :<input type="text" class="stData" name="college"></p>
+            <p id="college" class="inspect"></p>
+            <p>专业 :<input type="text" class="stData" name="major"></p>
+            <p id="major" class="inspect"></p>
+            <p>年级 :<input type="text" class="stData" name="grade"></p>
+            <p id="grade" class="inspect"></p>
+            <p>班级 :<input type="text" class="stData" name="cla"></p>
+            <p id="class1" class="inspect"></p>
+            <p>年龄 :<input type="text" class="stData" name="age"></p>
+            <p id="age" class="inspect"></p>
+
+            <div class="btBox2" id="btBox">
+            </div>
+        </div>
+    </div>
+<!--</form>-->
+<!--</form>-->
+</body>
+<script src="System.js"></script>
+</html>
+

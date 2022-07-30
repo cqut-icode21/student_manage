@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <link href="../css/mainStyle.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+<!-- 覆盖层 -->
+<div id="cover"
+     style="background: #000; position: absolute; left: 0px; top: 0px; width: 100%; filter: alpha(opacity=30); opacity: 0.3; display: none; z-index: 2 "></div>
+<!-- 添加、修改和展示学生信息表单 -->
+<div class="lTable">
+    <div class="lTitle"></div>
+    <div class="lTab">
+        <ul style="margin-top: 20px; margin-left: 30px; list-style: none; font-size: 20px; font-weight: 100;">
+            <li>学号：<input class="enter" id="number1" value="id"></li>
+            <div class="liCheck" id="number2"></div>
+            <li>姓名：<input class="enter" id="name1" value="name"></li>
+            <div class="liCheck" id="name2"></div>
+            <li>性别：<input class="enter" id="gender1" value="sex"></li>
+            <div class="liCheck" id="gender2"></div>
+            <li>学院：<input class="enter" id="college1" value="collage"></li>
+            <div class="liCheck" id="college2"></div>
+            <li>专业：<input class="enter" id="changeMajor1" value="professional"></li>
+            <div class="liCheck" id="changeMajor2"></div>
+            <li>年级：<input class="enter" id="grade1" value="grade"></li>
+            <div class="liCheck" id="grade2"></div>
+            <li>班级：<input class="enter" id="class1" value="clazz"></li>
+            <div class="liCheck" id="class2"></div>
+            <li>年龄：<input class="enter" id="age1" value="age"></li>
+            <div class="liCheck" id="age2"></div>
+        </ul>
+    </div>
+    <input class="lEnter" onclick="ensureChangeInfo()" type="button" value="确定"></input>
+    <input class="lExit" onclick="changeClose()" type="button" value="关闭"></input>
+</div>
+<div>
+    <!-- 页面顶部 -->
+    <div class="top">
+        <div class="top-text">学生信息管理系统</div>
+    </div>
+    <!-- 页面主体 -->
+    <div class="main">
+        <!-- 主体部分上方操作栏 -->
+        <div class="foot">
+            <input class="add" onclick="addInfo()" type="button" value="添加"></input>
+            <input class="del" onclick="delInfo()" type="button" value="删除"></input>
+            <input class="searchSpan" style="height: 40px;"></input>
+            <button class="search" onclick="search()"><img alt="" src="../img/搜索.svg"></button>
+            <button class="back" onclick="back()"><img alt="" src="../img/返回.svg"></button>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div class="empty"></div>
+            <div style="width: 330px; min-width: 320px; margin: 0 auto;">
+                <input class="upPage" onclick="upPage()" type="button" value="上一页"></input>
+                <span style="text-align: center; height:30px; margin-top: 12px; width: 60px; color: aliceblue;"></span>
+                <input class="downPage" onclick="downPage()" style="margin-right: 20px;" type="button"
+                       value="下一页"></input>
+            </div>
+        </div>
+        <!-- 主体部分表格 -->
+        <table cellpadding="0" cellspacing="0">
+            <thead style="height: 35px;">
+            <tr>
+                <th><input id="allCheck" style='height:20px' type="checkbox"></th>
+                <th>序号</th>
+                <th>学号</th>
+                <th>姓名</th>
+                <th>性别</th>
+                <th>学院</th>
+                <th>专业</th>
+                <th>年级</th>
+                <th>班级</th>
+                <th>年龄</th>
+                <th>操作</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+    </div>
+</div>
+<script src="../js/myFunction.js"></script>
+<script src="https://lib.sinaapp.com/js/jquery/2.0.2/jquery-2.0.2.min.js"></script>
+</body>
+</html>
